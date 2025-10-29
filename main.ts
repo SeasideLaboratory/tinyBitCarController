@@ -52,10 +52,10 @@ basic.forever(function () {
                     Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Right, motorValRight)
                 } else {
                     if (motorValLeft > 0 && motorValRight < 0) {
-                        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_SpinLeft, motorValLeft)
+                        Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_SpinRight, motorValLeft)
                     } else {
                         if (motorValLeft < 0 && motorValRight > 0) {
-                            Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_SpinRight, motorValRight)
+                            Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_SpinLeft, motorValRight)
                         } else {
                             Tinybit.CarCtrlSpeed2(Tinybit.CarState.Car_Stop, valZero, valZero)
                         }
